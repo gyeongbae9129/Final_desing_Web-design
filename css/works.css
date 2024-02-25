@@ -1,0 +1,117 @@
+:root {
+  --main-color: #009944;
+  --main-bg: #fdfbf5;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fdfbf5;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+}
+.header-box {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  outline: 0.5px solid black;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.header-box img {
+  width: auto;
+  height: 44px;
+}
+
+/* fotter area */
+.contact-container {
+  width: 100%;
+  height: 156px;
+  outline: 0.5px solid black;
+  display: flex;
+}
+.sns {
+  width: 50%;
+  height: 100%;
+  outline: 0.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36pt;
+  font-weight: 600;
+  overflow: hidden;
+}
+.sns p {
+  padding-top: 16pt;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  background-color: white;
+  padding-bottom: 16pt;
+}
+
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #9d9993;
+}
+.flow-text:hover {
+  color: black;
+}
+.flow-text:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flow-wrap {
+  animation: textLoop 8s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.email {
+  width: 50%;
+  height: 100%;
+  outline: 0.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.footer-text {
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-color);
+  color: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8pt;
+}

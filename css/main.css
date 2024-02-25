@@ -25,7 +25,6 @@ header {
   display: flex;
   flex: 1;
   box-sizing: border-box;
-  border: 0.5px solid black;
   outline: 0.5px solid black;
   align-items: center;
   justify-content: center;
@@ -37,7 +36,7 @@ header {
 }
 
 .canvas {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--main-color);
   position: relative;
@@ -45,8 +44,11 @@ header {
 }
 
 .canvas img {
-  width: 700px;
-  height: auto;
+  position: absolute;
+  object-fit: cover;
+}
+.random-image {
+  z-index: -1;
 }
 
 .receipt {
@@ -57,10 +59,11 @@ header {
   width: 256px;
   height: 536px;
   background-color: var(--main-bg);
-  border: 0.5px solid black;
+  outline: 0.5px solid black;
   display: flex;
   flex-direction: column;
   padding: 32px 40px;
+  font-size: 7pt;
 }
 
 .receipt .logo {
@@ -70,16 +73,64 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.receipt p {
-  font-size: 10px;
+.area1 {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 200%;
+  font-size: 8pt;
+}
+.area1 p:first-child {
+  font-size: 10pt;
+  font-weight: 500;
+}
+.receipt-date {
+  margin-top: 12px;
+}
+.changedata-container {
+  width: 100%;
+  height: fit-content;
+  margin: 12px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 12px 0;
 }
 
+.main-title {
+  font-size: 16pt;
+  font-weight: 700;
+}
+.sub-title-container {
+  margin-top: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-title {
+  font-size: 12pt;
+  font-weight: 600;
+}
+.explanatory-text {
+  margin-top: 12px;
+  line-height: 140%;
+}
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 180%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid black;
+  margin-bottom: 12px;
+}
+.price-container p {
+  width: 50%;
+}
 .canvas-text {
   position: absolute;
-  width: max-content;
   height: 204px;
-  top: 71.5%;
+  top: 71.4%;
   left: 4%;
 }
 
@@ -89,9 +140,7 @@ header {
   padding: 12px;
   background-color: var(--main-bg);
   border: 0.5px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 60px;
   font-size: 52pt;
   font-weight: 600;
   margin-bottom: 20px;
@@ -124,13 +173,19 @@ header {
   justify-content: center;
   font-size: 12pt;
   font-weight: 600;
+  transition: all 0.5s;
+}
+.about-buyby-area .about-down:hover {
+  background-color: var(--main-color);
+  color: var(--main-bg);
+}
+.about-midori-area .about-down:hover {
+  background-color: var(--main-bg);
+  color: var(--main-color);
 }
 
 .about-buyby-area {
   background-color: var(--main-bg);
-}
-
-.about-buyby-area .about-left {
 }
 
 .about-buyby-area .about-left .about-title {
@@ -158,15 +213,21 @@ header {
   align-items: center;
   justify-content: center;
 }
+.img-container {
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid black;
+  overflow: hidden;
+}
 .about-buyby-area .about-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  border: 0.5px solid black;
   transition: all 0.5s;
 }
 .about-buyby-area .about-right img:hover {
+  transform: scale(1.05);
   filter: grayscale(0);
 }
 .about-midori-area {
@@ -189,6 +250,7 @@ header {
   transition: all 0.5s;
 }
 .about-midori-area .about-left img:hover {
+  transform: scale(1.05);
   filter: grayscale(0);
 }
 .about-midori-area .about-right .about-title {
@@ -211,14 +273,18 @@ header {
 }
 
 .text-big {
+  width: 100%;
   font-size: 54pt;
   font-weight: 600;
   line-height: 140%;
+  height: fit-content;
 }
 
 .text-small {
+  width: 100%;
   font-size: 12pt;
   line-height: 160%;
+  height: fit-content;
 }
 
 .works-container {
@@ -246,18 +312,17 @@ header {
 }
 .article-img {
   height: 75%;
-  outline: 0.5px solid black;
   padding: 32px;
 }
 .article-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 0.5px solid black;
   filter: grayscale(100%);
   transition: all 0.5s;
 }
 .article-img img:hover {
+  transform: scale(1.05);
   filter: grayscale(0);
 }
 .article-text {
@@ -274,7 +339,7 @@ header {
   font-size: 10pt;
   margin-bottom: 1rem;
 }
-.article-data {
+.article-date {
   font-size: 8pt;
 }
 
@@ -287,6 +352,11 @@ header {
   justify-content: center;
   font-size: 12pt;
   font-weight: 600;
+  transition: all 0.5s;
+}
+.works-down:hover {
+  background-color: var(--main-color);
+  color: var(--main-bg);
 }
 
 .contact-container {
@@ -304,13 +374,49 @@ header {
   justify-content: center;
   font-size: 36pt;
   font-weight: 600;
+  overflow: hidden;
 }
 .sns p {
-  padding-top: 8pt;
+  padding-top: 16pt;
   border-top: 0.5px solid black;
   border-bottom: 0.5px solid black;
-  padding-bottom: 8pt;
+  background-color: white;
+  padding-bottom: 16pt;
 }
+
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #9d9993;
+}
+.flow-text:hover {
+  color: black;
+}
+.flow-text:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flow-wrap {
+  animation: textLoop 8s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
 .email {
   width: 50%;
   height: 100%;
