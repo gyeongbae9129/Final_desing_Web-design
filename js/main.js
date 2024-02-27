@@ -11,22 +11,22 @@ setDate.innerHTML = a;
 // イメージ, タイトル, 説明文 データ
 const imageData = [
   {
-    imageUrl: "https://github.com/gyeongbae9129/Final_desing_Web-design/tree/main/_images/sozai/茶色の破片＿みどり.png",
-    imageOriUrl: ".././_images/sozai/original/茶色の破片.png",
+    imageUrl: "_images/sozai/茶色の破片_みどり.png",
+    imageOriUrl: "_images/sozai/original/茶色の破片.png",
     title: "茶色の破片",
     sub_title: "sub-title 1",
     description: "茶色の破片に関する説明文です。",
   },
   {
-    imageUrl: "https://github.com/gyeongbae9129/Final_desing_Web-design/tree/main/_images/sozai/木辺マーク＿みどり.png",
-    imageOriUrl: ".././_images/sozai/original/木辺マーク.png",
+    imageUrl: "_images/sozai/木辺マーク_みどり.png",
+    imageOriUrl: "_images/sozai/original/木辺マーク.png",
     title: "木辺マーク",
     sub_title: "sub-title 2",
     description: "木辺マークに関する説明文です。",
   },
   {
-    imageUrl: "https://github.com/gyeongbae9129/Final_desing_Web-design/tree/main/_images/sozai/白発泡＿みどり.png",
-    imageOriUrl: ".././_images/sozai/original/白発泡.png",
+    imageUrl: "_images/sozai/白発泡_みどり.png",
+    imageOriUrl: "_images/sozai/original/白発泡.png",
     title: "白発泡",
     sub_title: "sub-title 3",
     description: "白発泡に関する説明文です。",
