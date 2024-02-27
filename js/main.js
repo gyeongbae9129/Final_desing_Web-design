@@ -39,8 +39,8 @@ const imageData = [
     description: "岩ブロックに関する説明文です。",
   },
   {
-    imageUrl: "./_images/sozai/丸い砥石＿みどり.png",
-    imageOriUrl: "./_images/sozai/original/丸い砥石.png",
+    imageUrl: "../_images/sozai/丸い砥石＿みどり.png",
+    imageOriUrl: "../_images/sozai/original/丸い砥石.png",
     title: "丸い砥石",
     sub_title: "sub-title 5",
     description: "丸い砥石に関する説明文です。",
