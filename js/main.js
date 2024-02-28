@@ -32,7 +32,7 @@ const imageData = [
     description: "白発泡に関する説明文です。",
   },
   {
-    imageUrl: "img/sozai岩ブロック.png",
+    imageUrl: "img/sozai/岩ブロック.png",
     imageOriUrl: "img/sozai/original/岩ブロック.png",
     title: "岩ブロック",
     sub_title: "sub-title 4",
