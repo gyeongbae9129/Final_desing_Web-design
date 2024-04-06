@@ -32,8 +32,8 @@ const imageData = [
     description: "白発泡に関する説明文です。",
   },
   {
-    imageUrl: "img/sozai/岩ブロック.png",
-    imageOriUrl: "img/sozai/original/岩ブロック.png",
+    imageUrl: "img/sozai/岩ブロック.png",
+    imageOriUrl: "img/sozai/original/岩ブロック.png",
     title: "岩ブロック",
     sub_title: "sub-title 4",
     description: "岩ブロックに関する説明文です。",
@@ -68,7 +68,7 @@ const imageData = [
   },
   {
     imageUrl: "img/sozai/ガラス片.png",
-    imageOriUrl: "img/sozai/original/ガラス片.png",
+    imageOriUrl: "img/sozai/original/ガラス片.png",
     title: "ガラス片",
     sub_title: "sub-title 9",
     description: "ガラス片に関する説明文です。",
@@ -102,8 +102,8 @@ const imageData = [
     description: "チョン丸に関する説明文です。",
   },
   {
-    imageUrl: "img/sozai/パレット表.png",
-    imageOriUrl: "img/sozai/original/パレット表.png",
+    imageUrl: "img/sozai/パレット表.png",
+    imageOriUrl: "img/sozai/original/パレット表.png",
     title: "パレット表",
     sub_title: "sub-title 14",
     description: "パレット表に関する説明文です。",
@@ -174,7 +174,7 @@ function handleImageHover(event) {
     titleObj.style.color = "";
     subTitleObj.style.color = "";
     descriptionObj.style.color = "";
-  }, 400); // 2초(2000밀리초) 후에 실행
+  }, 400);
 }
 
 //article Link
