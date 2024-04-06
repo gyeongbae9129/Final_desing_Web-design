@@ -67,7 +67,7 @@ const imageData = [
     description: "絵の具に関する説明文です。",
   },
   {
-    imageUrl: "img/sozai/ガラス片.png",
+    imageUrl: "img/sozai/ガラス片.png",
     imageOriUrl: "img/sozai/original/ガラス片.png",
     title: "ガラス片",
     sub_title: "sub-title 9",
